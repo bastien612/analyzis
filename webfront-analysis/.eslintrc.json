@@ -5,11 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
@@ -30,6 +26,19 @@
     "react-hooks"
   ],
   "rules": {
+    "no-empty-pattern": [
+      "warn",
+      {
+        "allowObjectPatternsAsParameters": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "args": "all"
+      }
+    ],
     "react/jsx-pascal-case": "off",
     "camelcase": "off",
     "yoda": [
