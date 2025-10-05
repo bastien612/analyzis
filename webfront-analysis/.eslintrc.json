@@ -1,0 +1,195 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import",
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "rules": {
+    "react/jsx-pascal-case": "off",
+    "camelcase": "off",
+    "yoda": [
+      "error",
+      "never",
+      {
+        "exceptRange": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "arrow-body-style": "warn",
+    "dot-notation": "warn",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/require-default-props": "off",
+    "spaced-comment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "prefer-destructuring": "off",
+    "react/jsx-no-bind": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-shadow": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "@typescript-eslint/no-shadow": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "consistent-return": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "function-declaration",
+        "unnamedComponents": "function-expression"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "info",
+          "error"
+        ]
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 250
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react/prop-types": "error",
+    "jsx-a11y/control-has-associated-label": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/aria-role": "warn",
+    "no-unsafe-optional-chaining": "warn",
+    "react/jsx-no-constructed-context-values": "warn",
+    "no-useless-catch": "warn",
+    "no-restricted-syntax": "off",
+    "max-classes-per-file": [
+      "error",
+      {
+        "ignoreExpressions": true,
+        "max": 2
+      }
+    ],
+    "no-await-in-loop": "warn",
+    "no-useless-return": "warn",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-else-return": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true
+      }
+    ],
+    "react/destructuring-assignment": "error",
+    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/ban-ts-comment": [
+      "warn",
+      {
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": "allow-with-description"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/order": "error",
+    "import/no-cycle": "error",
+    "react/no-unused-prop-types": "error",
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        "forbid": [
+          ">",
+          "}"
+        ]
+      }
+    ],
+    "react/jsx-no-useless-fragment": "error",
+    "default-case": "error",
+    "object-shorthand": "error",
+    "react/no-unstable-nested-components": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/explicit-function-return-type": [
+      "warn",
+      {
+        "allowExpressions": true
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./"
+      }
+    }
+  },
+  "globals": {
+    "describe": "readonly",
+    "it": "readonly",
+    "test": "readonly",
+    "expect": "readonly",
+    "beforeEach": "readonly",
+    "afterEach": "readonly"
+  }
+}
