@@ -1,0 +1,175 @@
+######################
+# Project Specific
+######################
+**/src/main/webapp/content/css/main.css
+**/target/www/**
+**/src/test/javascript/coverage/
+AD.txt
+**/*.jar
+dist.zip
+misc/
+# .wasm files are from ifc.js library and should not be pushed
+*.wasm
+**/wasm
+# Folder with secrets for the docker container to build and deploy the app
+ci-cd-credentials
+secrets
+.m2/
+dump
+
+######################
+# Node
+######################
+**/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
+**/.awcache/*
+**/.cache-loader/*
+
+######################
+# SASS
+######################
+.sass-cache/
+
+######################
+# Eclipse
+######################
+*.pydevproject
+.project
+.metadata
+tmp/
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+**/src/main/resources/rebel.xml
+
+# External tool builders
+.externalToolBuilders/**
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+######################
+# Intellij
+######################
+
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+out/
+.idea/sonarlint
+workspace.xml
+usage.statistics.xml
+.idea/
+
+######################
+# Visual Studio Code
+######################
+.vscode/
+
+######################
+# Maven
+######################
+**/log/
+**/target/
+
+######################
+# Gradle
+######################
+.gradle/
+**/build/
+# Ignore Gradle project-specific cache directory
+.gradle
+# Ignore Gradle build output directory
+build
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+######################
+# Directories
+######################
+**/bin/
+**/deploy/
+
+######################
+# Logs
+######################
+**/logs/
+*.log*
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+*.zip
+
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
+
+######################
+# Maven Wrapper
+######################
+!.mvn/wrapper/maven-wrapper.jar
+
+######################
+# ESLint
+######################
+.eslintcache
+
+######################
+# Terraform
+######################
+.terraform/
+**/**.backup
+**.tfstate
+**.lock.hcl
