@@ -1,11 +1,12 @@
 import "./App.css"
-import { Container } from "@mui/material"
-import { HomePage } from "./pages/HomePage.tsx"
+import React from "react"
+import { HomePage } from "./pages/HomePage"
+import { Layout } from "./core/components/Layout/Layout"
 
-export function App() {
+export function App(): React.JSX.Element {
   return (
-    <Container>
+    <Layout>
       <HomePage />
-    </Container>
+    </Layout>
   )
 }

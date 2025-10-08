@@ -9,6 +9,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -17,12 +18,16 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": [
+      "./tsconfig.json"
+    ]
   },
   "plugins": [
     "react",
     "import",
     "@typescript-eslint",
+    "jsx-a11y",
     "react-hooks"
   ],
   "rules": {
@@ -66,6 +71,8 @@
       "error",
       "ignorePackages",
       {
+        "js": "never",
+        "jsx": "never",
         "ts": "never",
         "tsx": "never"
       }
@@ -146,7 +153,9 @@
       }
     ],
     "react/destructuring-assignment": "error",
-    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/no-empty-object-type": "warn",
+    "@typescript-eslint/no-unsafe-function-type": "error",
+    "@typescript-eslint/no-wrapper-object-types": "error",
     "@typescript-eslint/ban-ts-comment": [
       "warn",
       {
